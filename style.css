@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(95, 52, 0);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.row {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: right;
+}
+
+header .row {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 75px;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+.header-text-container {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 75px);
+}
+
+.header-text h1 {
+    font-size: 70px;
+}
+
+.header-text p {
+    font-size: 40px;
+}
+
+
+
+section {
+    margin: 100px;
+    padding: 100px;
+}
+
+.experience-box {
+    display: flex;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.work-box-image {
+    max-width: 60%;
+}
+
+.work-box-image img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 15px;
+}
+
+.work-box-text a {
+    background-color: gray;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
