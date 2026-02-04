@@ -7,7 +7,7 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     color: white;
-    background-color: rgb(95, 52, 0);
+    background-color: #1a1a2e;
 }
 
 a {
@@ -59,17 +59,29 @@ nav a {
     font-size: 40px;
 }
 
-
-
 section {
-    margin: 100px;
-    padding: 100px;
+    padding: 80px 100px;
+    background-color: #1a1a2e;
+}
+
+section:nth-of-type(odd) {
+    background-color: #16213e;
 }
 
 .experience-box {
     display: flex;
-    gap: 80px;
+    gap: 50px;
     margin-top: 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -88,9 +100,49 @@ ul {
     padding: 15px;
 }
 
+.work-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.work-box-text p {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.work-box-text div {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
 .work-box-text a {
-    background-color: gray;
-    padding: 5px;
+    background-color: #e94560;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.work-box-text a:hover {
+    background-color: #ff6b6b;
+}
+
+.work-box-text ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.work-box-text ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 h3 {
@@ -101,4 +153,37 @@ h2 {
     font-size: 40px;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+section:has(.Contact) {
+    padding: 0;
+    background: none;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.Contact a:hover {
+    background-color: #e94560;
+    border-color: #e94560;
+    transform: translateY(-2px);
 }
