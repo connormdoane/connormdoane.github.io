@@ -201,3 +201,69 @@ section:has(.Contact) {
     border-color: #e94560;
     transform: translateY(-2px);
 }
+
+/* Mobile portrait styles */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    nav {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 48px;
+    }
+
+    .header-text p {
+        font-size: 24px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .experience-box {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .work-box-image {
+        max-width: 100%;
+        order: -1;
+    }
+
+    .work-box-text {
+        gap: 12px;
+    }
+
+    .work-box-text a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 40px 20px;
+    }
+
+    .Contact a {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+}
